@@ -4433,7 +4433,7 @@ span.mail::before {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: black;
 }
 
 .plans-ban h1 {
@@ -4441,14 +4441,14 @@ span.mail::before {
     font-size: 52px;
     font-weight: 600;
     padding: 15px 0px;
-    color: #fff;
+    color:black;
 }
 
 .plans-ban p {
     width: 100%;
     font-weight: 300;
     font-size: 16px;
-    color: #f3f3f3;
+    color: black;
 }
 
 .plans-ban span.nocre {
@@ -4463,7 +4463,8 @@ span.mail::before {
 }
 
 .plans-main {
-    float: left;
+  
+    
     width: 100%;
     padding: 0px 0px 110px;
     margin: -80px 0px 0px;
@@ -4513,7 +4514,7 @@ span.mail::before {
 }
 .pri-box {
     color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
+    background: #FD8B51;
     padding: 25px 30px;
     float: left;
     width: 100%;
@@ -10169,6 +10170,7 @@ h2.db-tit{
         float: initial;
         max-width: 400px;
         height: auto;
+        background-color: #FD8B51;
     }
 
     .pri-box-pop {
@@ -11036,6 +11038,7 @@ h2.db-tit{
     .plans-ban h1 {
         font-size: 26px;
         line-height: 30px;
+        color: black;
     }
 
     .pr-bio-soc ul li {
