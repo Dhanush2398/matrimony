@@ -4703,6 +4703,7 @@ span.mail::before {
     border-radius: 5px;
     text-align: center;
     transition: all 0.5s ease;
+    height: 200px;
 }
 
 .ab-sec2 ul li div:hover {
