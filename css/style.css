@@ -632,7 +632,7 @@ img{
 /*-------------------------------------------------------*/
 /* MENU
 /*-------------------------------------------------------*/
-.menu {
+. {
     display: block;
     position: relative;
     font-size: 25px;
@@ -695,9 +695,10 @@ img{
 }
 
 .hom-nav .ic-logo {
-    height:60px;
+    height:68px;
     width:auto;
-    padding-top: 2px;
+    padding-bottom: 5px;
+    
 }
 
 .hom-nav .bl {
@@ -4651,8 +4652,10 @@ span.mail::before {
 }
 
 .ban-inn {
-    background: #ea1207;
-    background: linear-gradient(to right, #FC8F54, #AA5486);
+    background-image: url("/images/2.jpg");
+    background-position: center;
+    background-size: cover;
+   
     padding: 40px 20px 110px 20px;
     float: left;
     width: 100%;
@@ -4665,7 +4668,7 @@ span.mail::before {
     line-height: 100px;
     color: #fff;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(45deg, #00ff72, #66b5ff 80%);
+    background: -webkit-linear-gradient(45deg, #f6ff00, #a3ff66 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -4676,7 +4679,7 @@ span.mail::before {
 }
 
 .ban-inn .ban-tit p {
-    color: #fff;
+    color:black;
 }
 
 .ban-home {
@@ -4698,7 +4701,9 @@ span.mail::before {
     margin-top: 100px;
     width: 100%;
     padding-bottom: 120px;
-    background-color: #A888B5;
+  background-image: url("/images/3.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .ab-sec2 ul {
@@ -5685,6 +5690,7 @@ span.mail::before {
     border-radius: 10px;
     position: relative;
     margin: 0px 15px;
+    height: 450px;
 }
 
 .cus-revi-box .revi-im {
@@ -5909,8 +5915,9 @@ span.mail::before {
 /* ABOUT
 /*-------------------------------------------------------*/
 .ab-cont {
+    
     padding-bottom: 0;
-    background-color:#EFB6C8;
+    background-color:#f08aaa;
 }
 
 .ab-cont ul {
@@ -5948,6 +5955,7 @@ span.mail::before {
     height: 38px;
     text-align: center;
     transition: all 0.4s ease;
+   
 }
 
 .ab-cont ul li .ab-cont-po:hover i {
@@ -9853,7 +9861,7 @@ h2.db-tit{
     }
 
     .hom-nav .ic-logo {
-        padding: 2px 0px 4px 0px;
+        padding: 4px 0px 0px 0px;
     }
 
     .fil-mob.fil-mob-act {
@@ -10326,6 +10334,7 @@ h2.db-tit{
         border: 1px solid #d7d1be;
         margin: 10px;
         padding: 30px 20px 25px 20px;
+        
     }
 
     .blog ul li {
@@ -10988,6 +10997,9 @@ h2.db-tit{
 
     .home-tit h2 {
         font-size: 28px;
+        text-decoration: underline;
+       
+      
     }
 
     .wed-foot-link div:nth-child(2) {
@@ -11101,7 +11113,7 @@ h2.db-tit{
     }
 
     .mob-me-ic {
-        top: 7px;
+        top: 18px;
     }
 
     .pro-gal-imag {
@@ -11225,7 +11237,7 @@ h2.db-tit{
 
     .hom-nav .ic-logo {
         width: auto;
-        height: 60px;
+        height: 65px;
         padding-top: 5px;
     }
 }
