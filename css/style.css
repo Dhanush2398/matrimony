@@ -450,8 +450,8 @@ img{
     font-size: 11px;
     font-weight: 500;
     border-right: 1px solid rgba(255, 255, 255, 0.19);
-    padding: 10px 15px;
-    text-transform: uppercase;
+    padding: 10px 10px;
+    
 }
 
 .head-top ul li a:hover {
@@ -4655,7 +4655,8 @@ span.mail::before {
     background-image: url("/images/2.jpg");
     background-position: center;
     background-size: cover;
-   
+    opacity: 0.8;
+    
     padding: 40px 20px 110px 20px;
     float: left;
     width: 100%;
@@ -4668,9 +4669,7 @@ span.mail::before {
     line-height: 100px;
     color: #fff;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(45deg, #f6ff00, #a3ff66 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   
     font-weight: 800;
 }
 
@@ -4680,6 +4679,7 @@ span.mail::before {
 
 .ban-inn .ban-tit p {
     color:black;
+  font-weight: 1000;
 }
 
 .ban-home {
