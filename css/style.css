@@ -1,9 +1,5 @@
 /*-----------------------------------------
- [MASTER STYLE SHEET]
- * THEME NAME - Wedding Matrimony HTML5 Template
- * Author: RN53 Themes
- * Descriptios: Wedding Matrimony HTML5 Template. Can be Used For Various Perposes.
- * Version: v1
+
  -----------------------------------------------*/
 /*-------------------------------------------------
  =  TABLE OF CSS
@@ -61,6 +57,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&amp;display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 /*-------------------------------------------------------*/
 /* COMMON CSS 
@@ -88,7 +86,8 @@ body {
     font-size: inherit;
     line-height: inherit;
     vertical-align: baseline;
-    font-family: Poppins, sans-serif;
+    font-family: "Lobster", serif;
+    letter-spacing: 1.1px;
     font-weight: 400;
 }
 
@@ -158,7 +157,7 @@ summary,
 input,
 textarea,
 select {
-    font-family: Poppins, sans-serif;
+    font-family: "Lobster", serif;
     color: #66451c;
 }
 
@@ -317,7 +316,13 @@ img{
     z-index: -1;
     /* height: 100vh; */
 }
-
+.home-acces-main {
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #000;
+    padding-top: 30px;
+}
 .hom-ban-sli:before,
 .home-acces-main:after,
 .home-acces-main:before {
@@ -632,7 +637,7 @@ img{
 /*-------------------------------------------------------*/
 /* MENU
 /*-------------------------------------------------------*/
-. {
+/* {
     display: block;
     position: relative;
     font-size: 25px;
@@ -648,7 +653,7 @@ img{
     float: left;
     box-shadow: rgb(246, 175, 4) 0px 0px 0px;
     animation: 1.5s ease 0s infinite normal none running pulse;
-}
+} */
 
 .menu i {
     width: 20px;
@@ -772,7 +777,7 @@ img{
     width: 200px;
 }
 
- {
+ /* {
     content: "\f105";
     font: normal normal normal 14px/1 FontAwesome;
     transform: rotate(90deg);
@@ -782,7 +787,7 @@ img{
     position: relative;
     top: 2px;
     left: 8px;
-}
+} */
 
 .smenu-single ul {}
 
@@ -1471,6 +1476,12 @@ i.fa-instagram:hover {
 /*-------------------------------------------------------*/
 /* HOME BANNER TITLE
 /*-------------------------------------------------------*/
+.mob-menu .title{
+    font-size: 23px;
+    font-weight: 900;
+    /* padding-right:12px; */
+    font-family: var(--tit-font);
+}
 .head-pro b {
     padding: 0px;
     font-size: 10px;
@@ -1550,7 +1561,7 @@ i.fa-instagram:hover {
 
 .ban-search ul li {
     float: left;
-    width: 20%;
+    width: 16.5%;
     padding: 0px 5px;
 }
 
@@ -2072,6 +2083,390 @@ table td{}
 
 
 
+/*-------------------------------------------------------*/
+/* HOME QUICK ACCESS
+/*-------------------------------------------------------*/
+.home-acces-main {
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #000;
+    padding-top: 30px;
+}
+
+.hom-cus-revi:before,
+.pg-wedd-vid:before {
+    content: '';
+    position: absolute;
+    background: url('../images/grass.png') no-repeat;
+    width: 100%;
+    height: 50px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background-size: contain;
+}
+
+.hom-cus-revi:before {
+    top: 0;
+    bottom: initial;
+}
+
+.home-acces {
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.home-acces ul li {
+    float: left;
+    width: 25%;
+    padding: 0px 10px;
+}
+
+.home-acces ul li div.hacc {
+    background-image: url("../images/couples/1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out 0s;
+    overflow: hidden;
+    max-height: 375px;
+}
+
+.act .home-acces ul li div.hacc {
+    transition-delay: 0s;
+}
+
+.home-acces ul li div.hacc:hover,
+.home-acces ul li div.hacc.act {
+    transition-delay: 0s;
+    background-size: 120%;
+}
+
+.home-acces ul li div.hacc:hover::after,
+.home-acces ul li div.hacc.act::after {
+    transform: scale(1);
+}
+
+.home-acces ul li div.hacc::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 50px 50px 0px 0px;
+    transition: all 0.4s ease-in-out 0s;
+    background: rgb(229, 2, 107);
+    transform: scale(0);
+    transform-origin: right bottom;
+    z-index: 0;
+}
+
+.act .home-acces ul li div.hacc1 {
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+.act .home-acces ul li div.hacc2 {
+    transform: translateY(0px);
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.act .home-acces ul li div.hacc3 {
+    transform: translateY(0px);
+    transition-delay: 1.5s;
+    opacity: 1;
+}
+
+.act .home-acces ul li div.hacc4 {
+    transform: translateY(0px);
+    transition-delay: 2s;
+    opacity: 1;
+}
+
+.home-acces ul li div.hacc::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    border-radius: 8px;
+    transition: all 0.4s ease 0s;
+    background: linear-gradient(to top, rgb(37, 24, 8), rgba(215, 154, 78, 0));
+}
+
+.home-acces ul li div.hacc1 {
+    background-image: url("../images/couples/1.jpg");
+}
+
+.home-acces ul li div.hacc2 {
+    background-image: url("../images/couples/2.jpg");
+}
+
+.home-acces ul li div.hacc3 {
+    background-image: url("../images/couples/11.jpg");
+}
+
+.home-acces ul li div.hacc4 {
+    background-image: url("../images/couples/4.jpg");
+}
+
+.home-acces ul li div.hacc .con {
+    padding: 90px 20px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.home-acces ul li div.hacc:hover .con,
+.home-acces ul li div.hacc.act .con {
+    padding: 70px 20px 60px;
+}
+
+.home-acces ul li div.hacc .con img {
+    border: 3px solid rgb(0, 0, 0);
+    width: 140px;
+    padding: 20px;
+    border-radius: 25%;
+    filter: invert(1);
+    margin-bottom: 35px;
+    transition: all 0.5s ease-in-out 0s;
+    opacity: 0.8;
+}
+
+.home-acces ul li div.hacc:hover .con img,
+.home-acces ul li div.hacc.act .con img {
+    width: 100px;
+}
+
+.home-acces ul li div.hacc .con h4 {
+    font-weight: 500;
+    font-size: 26px;
+    font-family: var(--tit-font);
+    color: #fff;
+}
+
+.home-acces ul li div.hacc .con p {
+    margin: 0px;
+    color: #fff;
+}
+
+.home-acces ul li div.hacc .con a {
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 25px;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+}
+
+.home-acces ul li div.hacc:hover .con a,
+.home-acces ul li div.hacc.act .con a {
+    opacity: 1;
+    transform: translateY(0px);
+    position: relative;
+}
+
+.home-acces .slick-arrow {
+    z-index: 3;
+    border: 0;
+    background: none;
+    margin-top: 63px;
+    opacity: 0.5;
+}
+
+.home-acces .slick-arrow:before,
+.home-acces .slick-arrow:after {
+    content: '';
+    position: absolute;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.home-acces .slick-arrow:before {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(45deg);
+}
+
+.home-acces .slick-arrow:after {
+    left: -5px;
+    width: 95px;
+    height: 1px;
+    border-top: 1px solid #fff;
+    bottom: 24px;
+}
+
+.home-acces .slick-arrow:hover {}
+
+.home-acces .slick-prev {
+    left: 150px;
+}
+
+.home-acces .slick-next {
+    right: 150px;
+}
+
+.home-acces .slick-next:before {
+    right: -13px;
+    left: initial;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.fclick {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+}
+
+.home-brand {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px 0px 100px;
+}
+
+.home-brand::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -128px;
+    right: 0px;
+    width: 100%;
+    height: 256px;
+    transform: rotate(-180deg);
+}
+
+.inte {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.inte h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.inte p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.inte ul {
+    float: left;
+    width: 100%;
+}
+
+.inte ul li {
+    float: left;
+    width: 25%;
+    padding: 0px 5px 5px;
+}
+
+.hom-oth {
+    background: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px 10px 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgb(245, 237, 240);
+    box-shadow: rgba(150, 150, 150, 0.78) 0px 0px 9px -7px;
+    transition: all 0.5s ease 0s;
+}
+
+.hom-oth:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 13px -9px;
+    transition: all 0.5s ease 0s;
+    transform: translateY(-1px);
+    background: rgb(255, 255, 255);
+}
+
+.hom-oth div:nth-child(1) {
+    float: left;
+    width: 30%;
+}
+
+.hom-oth div:nth-child(1) img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+
+.hom-oth div:nth-child(2) {
+    float: left;
+    width: 70%;
+    padding: 18px 15px 14px 20px;
+}
+
+.inte ul li div h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+}
+
+.inte ul li div span {
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+}
+
+.count {
+    /* padding: 0px 0px 100px; */
+    float: left;
+    width: 100%;
+}
+
+.hom-ab {
+    background: rgb(249, 218, 202);
+    padding: 25px 0px;
+}
+
+.hom-ab-in {
+    width: 100%;
+}
+
+.hom-ab-in h2 {
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.hom-ab-in h2 a {
+    color: rgb(228, 132, 81);
+    padding: 5px 31px;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
 
 
 /*-------------------------------------------------------*/
@@ -2082,9 +2477,9 @@ table td{}
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    padding: 0 10px;
+    padding:  10px;
   }
   .body1::before {
     content: "";
@@ -3796,7 +4191,7 @@ span.mail::before {
     width: 100%;
     background: #ffeebf;
     border-radius: 15px;
-    margin: 135px 0px 0px;
+    margin: 35px 0px 0px 0;
 }
 
 .fot-ban-inn .lhs {
@@ -3817,9 +4212,17 @@ span.mail::before {
     left: 0;
     right: 0;
     background-size: 325px;
-    animation: 4000s linear 0s infinite normal both running movehor;
+    animation: 400s linear 0s infinite normal both running movehor;
 }
+@keyframes movehor {
+    0% {
+        background-position: 0px -18px;
+    }
 
+    100% {
+        background-position: -10000% -18px;
+    }
+}
 .fot-ban-inn .lhs h2 {
     font-size: 32px;
     font-weight: 700;
@@ -4657,7 +5060,7 @@ span.mail::before {
 }
 
 .ban-inn .ban-tit p {
-    color:black;
+    color:#fff;
   font-weight: 1000;
 }
 
@@ -4677,12 +5080,12 @@ span.mail::before {
     z-index: 1;
     position: relative;
     float: left;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     width: 100%;
     padding-bottom: 120px;
-  background-image: url("/images/3.jpg");
+  /* background-image: url("/images/3.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .ab-sec2 ul {
@@ -5670,7 +6073,7 @@ span.mail::before {
     border-radius: 10px;
     position: relative;
     margin: 0px 15px;
-    height: 450px;
+    height: 375px;
 }
 
 .cus-revi-box .revi-im {
@@ -5873,9 +6276,12 @@ span.mail::before {
     border: 1px solid rgba(255, 255, 255, 0.55);
     color: rgba(255, 255, 255, 0.01);
 }
-
 .hom-cus-revi .slick-prev {
     left: 0px;
+}
+.hom-cus-revi .slick-prev::before {
+    left: -6px;
+    top: -11px;
 }
 
 .hom-cus-revi .slick-next {
@@ -5888,7 +6294,8 @@ span.mail::before {
 }
 
 .hom-cus-revi .slick-next::before {
-    left: 3px;
+    left: -2px;
+    top: -11px;
 }
 
 /*-------------------------------------------------------*/
@@ -6056,7 +6463,7 @@ span.mail::before {
     left: 0;
     width: 188px;
     height: 188px;
-    background: url('../images/leaf/.png') no-repeat;
+    /* background: url('../images/leaf/1.png') no-repeat; */
     background-size: 300px;
     background-position: -78px -70px;
 }
@@ -6069,7 +6476,7 @@ span.mail::before {
     right: 0;
     width: 123px;
     height: 300px;
-    background: url('../images/leaf/.png') no-repeat;
+    /* background: url('../images/leaf/1.png') no-repeat; */
     background-size: 121px;
     background-position: center right;
 }
@@ -6505,17 +6912,19 @@ span.mail::before {
     letter-spacing: 2px;
     transition: all 0.5s ease;
     position: relative;
-    left: -30px;
-    opacity: 0;
+    color: #fff;
+    /* left: -30px;
+    opacity: 0; */
 }
 
 .gal-im .txt h4 {
+    color: #fff;
     font-family: var(--tit-font);
     font-size: 24px;
     transition: all 0.5s ease;
     position: relative;
-    left: -30px;
-    opacity: 0;
+    /* left: -30px;
+    opacity: 0; */
 }
 
 .gal-im:hover span,
@@ -6785,8 +7194,8 @@ span.mail::before {
 
 .slick-dots li button {
     color: #0000;
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background: #858585;
     border-radius: 50px;
     border: 2px solid #fbf8ed;
@@ -7093,7 +7502,7 @@ span.mail::before {
     color: #66451c;
     padding: 20px 0 0px 0px;
     transition: all 0.5s ease;
-    font-family: Poppins, sans-serif;
+    font-family: "Lobster", serif;
 }
 
 .blog-rel .blog-home-box .txt h2 {
@@ -7743,7 +8152,7 @@ span.mail::before {
 /*-------------------------------------------------------*/
 /* CONTACT
 /*-------------------------------------------------------*/
-.pg-cont..ban-inn {}
+.pg-cont .ban-inn {}
 
 .pg-cont.ab-sec2 ul li div h4 {
     font-size: 16px;
@@ -9547,7 +9956,7 @@ h2.db-tit{
 
     .home-acces ul li {
         width: 50%;
-        padding: 10px;
+        padding: 8px;
     }
 
     .ban-tit {
@@ -9570,7 +9979,7 @@ h2.db-tit{
     }
 
     .fot-ban-inn {
-        margin: 80px 0px 10px 0px;
+        margin: 10px 0px 0px 0px;
         padding-right: 0px;
     }
 
@@ -9939,7 +10348,7 @@ h2.db-tit{
     }
 
     .home-acces {
-        padding: 15px 0 30px 0;
+        padding: 15px 0 10px 0;
     }
 
     .home-about {
@@ -10154,7 +10563,7 @@ h2.db-tit{
     }
 
     .count {
-        padding: 0px 0px 70px 0px;
+        padding: 0px 0px 0px 0px;
     }
 
     .plans-main ul li {
@@ -10327,7 +10736,7 @@ h2.db-tit{
     }
 
     .hom-cus-revi {
-        margin-bottom: 80px;
+        /* margin-bottom: 80px; */
     }
 
     .pro-pg-intro ul li {
@@ -11055,7 +11464,7 @@ h2.db-tit{
     }
 
     .fot-ban-inn {
-        margin: 60px 0px 30px 0px;
+        margin: 60px 0px 0px 0px;
     }
 
     .hom-coup-test ul li a {
@@ -11515,4 +11924,160 @@ margin-top: 20px;
     justify-content: space-evenly;
  }
 
- 
+ #footer span{
+    color: #ffe6df ;
+ }
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-box {
+  background-color: #CA0F06;
+  color:#ffffff;
+  padding: 3rem;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.contact .info-box h3 {
+  color:#ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .contact .info-box h3 {
+    font-size: 1.75rem;
+  }
+}
+
+.contact .info-box p {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.contact .info-box a {
+  color:#ffffff;
+}
+
+@media (max-width: 992px) {
+  .contact .info-box {
+    padding: 1.5rem;
+  }
+}
+
+.contact .info-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact .info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact .info-item .icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: color-mix(in srgb,#ffffff, transparent 85%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+.contact .info-item .icon-box i {
+  font-size: 1.5rem;
+  color:#ffffff;
+}
+
+.contact .info-item:hover .icon-box {
+  background-color: color-mix(in srgb,#ffffff, transparent 70%);
+}
+
+.contact .info-item .content h4 {
+  color:#ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.contact .info-item .content p {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.contact .info-item .content p:last-child {
+  margin-bottom: 0;
+}
+
+.contact .contact-form {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 1rem;
+  height: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 992px) {
+  .contact .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+.contact .contact-form h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact .contact-form h3 {
+    font-size: 1.75rem;
+  }
+}
+
+.contact .contact-form p {
+  color: color-mix(in srgb, #212529, transparent 25%);
+  margin-bottom: 2rem;
+}
+
+.contact .contact-form .form-control,
+.contact .contact-form .form-select {
+  padding: 0.875rem 1.25rem;
+  border-color: color-mix(in srgb, #212529, transparent 90%);
+  border-radius: 0.5rem;
+  background-color: color-mix(in srgb, #ffffff 90%, white 5%);
+  color: #212529;
+}
+
+.contact .contact-form .form-control:focus,
+.contact .contact-form .form-select:focus {
+  box-shadow: none;
+  border-color: #CA0F06;
+}
+
+.contact .contact-form .form-control::placeholder,
+.contact .contact-form .form-select::placeholder {
+  color: color-mix(in srgb, #212529, transparent 50%);
+}
+
+.contact .contact-form .btn {
+  background-color: #CA0F06;
+  color:#ffffff;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+}
+
+.contact .contact-form .btn i {
+  font-size: 1.25rem;
+}
+
+.contact .contact-form .btn:hover {
+  background-color: color-mix(in srgb, #CA0F06,#ffffff 20%);
+}
